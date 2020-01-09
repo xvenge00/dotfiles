@@ -1,6 +1,7 @@
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
+# this config is inspired by https://github.com/metiu07/dotfiles
 
 # Set win key as mod
 set $mod Mod4
