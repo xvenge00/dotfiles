@@ -182,9 +182,8 @@ assign [class="firefox"] 2
 # Disable bell sound
 exec --no-startup-id xset -b
 
-# TODO don't know if needed
 # Setup multiple monitors + Launch the polybar
-exec_always --no-startup-id autorandr --change
+exec --no-startup-id autorandr --change     # TODO don't know if needed
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Startup urxvt daemon

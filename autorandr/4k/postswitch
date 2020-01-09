@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+sed -i -e 's/Xft.dpi: [0-9]*$/Xft.dpi: 144/g' "$HOME"/.Xresources
+xrandr --dpi 144
+$HOME/.config/polybar/launch.sh &
