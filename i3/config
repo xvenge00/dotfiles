@@ -261,9 +261,6 @@ mode "$mode_gaps" {
     bindsym Escape mode "default"
 }
 
-# enable tap to click on touchpad
-exec xinput set-prop 11 277 1
-
 # set background
 exec feh --bg-fill ~/Pictures/backgrounds/hunting_tower.jpg
 
