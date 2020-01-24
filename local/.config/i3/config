@@ -161,11 +161,15 @@ mode "$mode_system" {
 bindsym XF86MonBrightnessUp exec "light -A 10
 bindsym XF86MonBrightnessDown exec "light -U 10
 
-# TODO(adam) doesn't work
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+
+# Media player controls
+bindsym $mod+F1 exec playerctl play-pause
+bindsym $mod+F2 exec playerctl previous
+bindsym $mod+F3 exec playerctl next
 
 # toggle split direction for each window
 default_orientation vertical
@@ -205,6 +209,9 @@ exec --no-startup-id nm-applet
 
 # Startup the keyboard mouse navigation
 exec --no-startup-id keynav
+
+# bluetooth applet
+exec --no-startup-id blueman-applet
 
 # Set keyboards
 exec_always "setxkbmap -option 'grp:alt_shift_toggle' -layout us,sk -variant ,qwerty"
@@ -261,7 +268,7 @@ mode "$mode_gaps" {
 }
 
 # set background
-exec feh --bg-fill ~/Pictures/backgrounds/hunting_tower.jpg
+exec feh --bg-fill ~/Pictures/backgrounds/rocket.png
 
 
 ## Program shortcuts
@@ -284,7 +291,7 @@ bindsym $mod+c exec --no-startup-id rofi -show calc -modi "calc:qalc +u8 -nocurr
 # Programs
 # TODO(adam) bindsym $mod+F1 exec ranger
 # bindsym $mod+F1 exec spacefm
-bindsym $mod+F2 exec firefox
+# bindsym $mod+F2 exec firefox
 
 #screenshot
 exec copyq

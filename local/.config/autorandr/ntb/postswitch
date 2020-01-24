@@ -4,15 +4,17 @@
 # !!!! when changing something here, chances are, you want to reverse them in other profile hooks as well
 
 # set dpi for most applications
-sed -i -e 's/Xft.dpi: [0-9]*$/Xft.dpi: 144/g' "$HOME"/.Xresources
+sed -i -e 's/Xft.dpi: [0-9]*$/Xft.dpi: 96/g' "$HOME"/.Xresources
 
 # force scaling of spotify, dpi scaling doesn't work
-sed -i -e 's/Exec=spotify \%U/Exec=spotify --force-device-scale-factor=1.5 %U/g' "$HOME"/.local/share/applications/spotify.desktop
+sed -i -e 's/Exec=spotify --force-device-scale-factor=1\.5 \%U/Exec=spotify %U/g' "$HOME"/.local/share/applications/spotify.desktop
 
-xrandr --dpi 144
+xrandr --dpi 96
 
 # restart X resources
 xrdb ~/.Xresources
+
+feh --bg-fill ~/Pictures/backgrounds/rocket.png
 
 # restart polybar after switch
 # TODO doesnt work
