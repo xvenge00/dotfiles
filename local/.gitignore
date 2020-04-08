@@ -1,0 +1,14 @@
+cmake-build-debug/
+cmake-build-release/
+*/cmake-build*
+build/
+build-release/
+.idea/
+moje/
+tmp/
+cmake-
+docker-compose-dev.yml
+DockerfileDev
+DockerfileDevLocal
+.vscode/
+

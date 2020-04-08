@@ -1,0 +1,9 @@
+ntb-obly {
+    output eDP-1 enable
+}
+
+home {
+    output eDP-1 enable position 0,1080
+    output "Goldstar Company Ltd W2261 0x00002A03" mode "1920x1080@60Hz" position 0,0
+}
+
