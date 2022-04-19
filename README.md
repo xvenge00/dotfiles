@@ -1,4 +1,1 @@
 # dotfiles
-
-## i3
-

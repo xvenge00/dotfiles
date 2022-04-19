@@ -1,0 +1,27 @@
+window {
+background: #2b2925;
+}
+
+* {
+  color: #dedede;
+}
+
+#input {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  padding: 10px;
+}
+
+#entry:selected {
+  background-color: #e5b224;
+}
+
+#img {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+#entry {
+  padding: 5px 10px;
+}

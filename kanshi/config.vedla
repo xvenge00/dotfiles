@@ -1,0 +1,28 @@
+{
+    output eDP-1 enable
+}
+
+{
+    output eDP-1 enable position 0,1080
+    output "Goldstar Company Ltd W2261 0x00002A03" mode "1920x1080@60Hz" position 0,0
+}
+
+{
+    output eDP-1 enable position 0,1080
+    output HDMI-A-1 mode "1920x1080@60Hz" position 0,0
+}
+
+{
+    output eDP-1 enable position 320,1440 
+    output "Philips Consumer Electronics Company PHL 276E8V 0x0000079A" scale 1.5 mode "3840x2160@59.997002Hz" position 0,0
+}
+
+{
+    output eDP-1 enable position 0,1080
+    output "Dell Inc. DELL SE2419H 8R954S2" mode "1920x1080@60Hz" position 0,0
+}
+
+{
+    output eDP-1 enable position 320,1440
+    output "ViewSonic Corporation VA2719-2K UZJ180820291" res 2560x1440 position 0,0
+}

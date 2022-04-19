@@ -1,0 +1,14 @@
+profile {
+    output eDP-1 enable
+}
+
+profile {
+    output "Unknown 0x0608 0x00000000" enable position 320,1440
+    output "Dell Inc. DELL SE2416H P7HT884U12UL" enable mode "1920x1080 @ 60.000 Hz" position 1440,0
+    output "ViewSonic Corporation VA2719-2K UZJ180820291" enable mode "1920x1080 @ 60.000 Hz" position 0,0
+}
+
+profile {
+    output eDP-1 enable position 0,1080
+    output "Dell Inc. DELL SE2416H P7HT884U12UL" enable mode "1920x1080 @ 60.000 Hz" position 0,0
+}
