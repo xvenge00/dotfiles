@@ -1,0 +1,6 @@
+[submodule "shell_enhancements/themes/powerlevel10k"]
+	path = shell_enhancements/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k
+[submodule "shell_enhancements/plugins/zsh-syntax-highlighting"]
+	path = shell_enhancements/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting

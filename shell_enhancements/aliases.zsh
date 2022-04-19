@@ -2,16 +2,17 @@
 # Use with caution
 #
 
-# ls, the common ones I use a lot shortened for rapid fire usage
-alias l='ls -lFh --group-dirs first'     #size,show type,human readable
-alias la='ls -lAFh --group-dirs first'   #long list,show almost all,show type,human readable
-alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
-alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
-alias ll='ls -l --group-dirs first'      #long list
+# ls
+alias l='ls -lFh --group-dirs first'     # size,show type,human readable
+alias la='ls -lAFh --group-dirs first'   # long list,show almost all,show type,human readable
+alias lr='ls -tRFh'   # sorted by date,recursive,show type,human readable
+alias lt='ls -ltFh'   # long list,sorted by date,show type,human readable
+alias ll='ls -l --group-dirs first'      # long list
 alias ldot='ls -ld .*'
 alias lS='ls -1FSsh'
 alias lart='ls -1Fcart'
 alias lrt='ls -1Fcrt'
+alias ls=lsd    # use lsd alternative
 
 alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
 
@@ -59,6 +60,10 @@ alias kbd="kb delete --id"
 alias kbg="kb grep"
 alias kbt="kb list --tags"
 
+# ranger
+alias ranger='. ranger' # to change directory after exiting ranger
+alias ra='ranger'
+
 # zsh is able to auto-do some kungfoo
 # depends on the SUFFIX :)
 #if is-at-least 4.2.0; then
@@ -94,5 +99,6 @@ alias kbt="kb list --tags"
 #  alias -s ace="unace l"
 #fi
 #
+
 # Make zsh know about hosts already accessed by SSH
-#zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
+zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
