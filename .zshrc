@@ -89,8 +89,7 @@ fi
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-# load aliases and enhancements 
-export ZSH_CUSTOM="$HOME/dotfiles/shell_enhancements"
+# custom aliases and enhancements are loaded by oh-my-zsh from ~/.oh-my-zsh/custom
 
 export EDITOR=vim
 export VISUAL=vim
