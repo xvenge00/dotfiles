@@ -23,3 +23,6 @@ alias mysql-report='mysql -hskdb-report.dev.dszn.cz -usklik report'
 alias mysql-report-db='mysql -hskdb-report-db.dev.dszn.cz -usklik report'
 alias mysql-ogar='mysql -usklik -hskdb-ogar.dev.dszn.cz sklik_ogar'
 alias mysql-controlserver='mysql -usklik -hskdbcontrol.dev.dszn.cz controlserver'
+
+alias aws-dev="aws --endpoint-url=http://tt4-s3s1-rgw.ko.iszn.cz --profile dev"
+alias aws-prod="aws --endpoint-url=http://tt4-s3s1-rgw.ko.iszn.cz --profile production"
