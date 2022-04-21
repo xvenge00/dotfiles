@@ -29,6 +29,7 @@ plugins=(
 	systemd
 	tmux
 	zsh-syntax-highlighting
+	aws
 )
 
 source $ZSH/oh-my-zsh.sh
