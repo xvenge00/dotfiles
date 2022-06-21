@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ "$#" -le 2 ]; then
+    echo "Too few arguments"
+    exit 1
+fi
+
+if [ ! -f "$1" ]; then
+    echo "Env file does not exist"
+    exit 2
+fi
+
+ENV_FILE="$1"
+shift
+
+# shellcheck disable=SC2046
+export $(grep -v '^#' "${ENV_FILE}" | xargs -d '\n')
+
+"$@"
