@@ -11,7 +11,7 @@ export ZSH="/home/adam/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # setting PATH
-export PATH=$PATH:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:/usr/local/bin:$HOME/dotfiles/shell_enhancements/scripts
+export PATH=$PATH:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:/usr/local/bin
 export LD_LIBRARY_PATH=/usr/local/lib/
 
 # Case-sensitive completion.
@@ -51,3 +51,5 @@ export VISUAL=vim
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+source $HOME/.zsh_profile

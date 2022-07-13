@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+# TODO convert to bash with default values
+
+if [[ -z $STOW_FOLDERS ]]; then
+    STOW_FOLDERS="alacritty,bin,environment,git,kanshi,mako,sway,vim,waybar,wofi,zsh"
+fi
+
+if [[ -z $DOTFILES ]]; then
+    DOTFILES=$HOME/.dotfiles
+fi
+
+STOW_FOLDERS=$STOW_FOLDERS DOTFILES=$DOTFILES $DOTFILES/install
