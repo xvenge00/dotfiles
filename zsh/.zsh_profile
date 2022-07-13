@@ -1,0 +1,5 @@
+ENV_CONFIG_HOME=$HOME/env
+
+for i in `find -L $ENV_CONFIG_HOME -type f`; do
+    source $i
+done
